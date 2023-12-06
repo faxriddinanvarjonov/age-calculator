@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>age-calculator</title>
+    <link rel="icon" href="./imgs/submit-btn.svg" />
+    <link rel="stylesheet" href="./css/normalize css.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="box-container">
+      <div class="inputs-parrent">
+        <form id="input__wrapper" class="input__wrapper">
+          <div>
+            <label class="input__label" for="days">day</label>
+            <input class="input" type="text" placeholder="DD" id="days" />
+            <label class="require" id="days-require" for="days"></label>
+          </div>
+          <div>
+            <label class="input__label" for="month">month</label>
+            <input class="input" type="text" placeholder="MM" id="month" />
+            <label class="require" id="month-require" for="month"></label>
+          </div>
+          <div>
+            <label class="input__label" for="years">year</label>
+            <input class="input" type="text" placeholder="YYYY" id="years" />
+            <label class="require" id="years-require" for="year"></label>
+          </div>
+        </form>
+      </div>
+      <div class="hr-wrapper">
+        <hr class="hr-line" />
+        <input
+          form="input__wrapper"
+          type="submit"
+          class="submit-btn__img"
+          src="./imgs/submit-btn.svg"
+          alt="sumbit button"
+        />
+      </div>
+      <div class="result">
+        <p class="years-result result-text">
+          <span style="color: #854dff" id="years-result">--</span>years
+        </p>
+        <p class="month-result result-text">
+          <span style="color: #854dff" id="month-result">--</span>month
+        </p>
+        <p class="days-result result-text">
+          <span style="color: #854dff" id="days-result">--</span>days
+        </p>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
