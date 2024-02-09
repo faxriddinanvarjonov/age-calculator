@@ -39,8 +39,7 @@ let calculateAge = () => {
       isTrue = false;
     } else if (
       yearsInput.value <= 0 ||
-      yearsInput.value > now.getFullYear() ||
-      monthInput.value > month
+      yearsInput.value > now.getFullYear()
     ) {
       yearsInput.style.borderColor = "red";
       yearsInput.parentElement.querySelector(".require").textContent =
